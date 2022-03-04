@@ -1,19 +1,34 @@
 import "./App.css";
 
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 export default class App extends Component {
   render() {
     return (
-      <div className="text-center justify-center fixed top-0 left-0 flex flex-col w-64 h-screen bg-black bg-opacity-90">
-        <img
-          src="/img/self_image.jpg"
-          alt="Ali Yarkın Caner"
-          className="mx-auto h-auto max-w-xs max-h-40 border-4 border-solid rounded-full border-white border-opacity-80"
-        />
-        <h1 className="text-white font-bold text-xl p-3">
-          Hey there! It's Yarkın
-        </h1>
+      <div className="grid grid-cols-6">
+        <div className="flex flex-col w-1/6 h-screen text-center justify-center fixed bg-black">
+          <img
+            src="/img/self_image.jpg"
+            alt="Ali Yarkın Caner"
+            className="mx-auto h-auto max-w-xs max-h-40 border-0 border-solid rounded-full border-white border-opacity-80"
+          />
+          <h1 className="text-white font-bold text-xl p-3">
+            Hey there! It's Yarkın
+          </h1>
+        </div>
+
+        <div className="col-start-2 col-span-5 flex flex-col h-screen pl-10 justify-center">
+          <div className="flex flex-row">
+            <a
+              className="border-2 border-solid rounded-full p-4 border-black"
+              href="www.linkedin.com/in/ali-yarkin-caner"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </a>
+          </div>
+        </div>
       </div>
     );
   }
