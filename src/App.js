@@ -3,6 +3,7 @@ import "./App.scss";
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default class App extends Component {
   render() {
@@ -10,6 +11,7 @@ export default class App extends Component {
       <div className="flex flex-col p-6">
         <div className="w-full text-center justify-center p-6">
           <img
+            id="profilePic"
             src="/img/self_image.jpg"
             alt="Ali Yarkın Caner"
             className="mx-auto h-auto max-w-xs max-h-80 border-4 border-solid rounded-full border-white"
@@ -19,19 +21,28 @@ export default class App extends Component {
           </h1>
         </div>
 
-        <div className="self-center pb-4">
-          <a href="www.linkedin.com/in/ali-yarkin-caner">
+        <div className="self-center pb-4 flex gap-4">
+          <a href="https://www.linkedin.com/in/ali-yarkin-caner/">
             <FontAwesomeIcon
               icon={faLinkedinIn}
-              size="lg"
-              className="bg-transparent border-2 border-solid rounded-full border-white p-4"
+              size="2x"
+              className="bg-transparent border-2 border-solid rounded-full border-white p-3 fa fa-linkedin"
+              color="white"
+            />
+          </a>
+
+          <a href="https://github.com/yarkincaner">
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="2x"
+              className="bg-transparent border-2 border-solid rounded-full border-white p-3 fa fa-github"
               color="white"
             />
           </a>
         </div>
 
         <hr className="self-center w-4/6 h-0.5 border-none bg-white" />
-        <div className="p-6 px-20 text-xl text-white justify-center">
+        <div className="p-6 w-2/3 text-xl text-white self-center">
           <p>
             A CSE student who has been entranced by the software development
             process. Always eager to learn new technologies. Mainly done

@@ -1,6 +1,3 @@
-$background-color: #000000;
-$text-color: #e5e5e5;
-
 html,
 body {
   width: 100%;
@@ -25,11 +22,19 @@ body {
   }
 }
 
-.fa-hover {
-  color: white;
+.fa:hover {
+  background-color: white;
 }
 
-.fa-hover:hover {
-  background-color: white;
+.fa-linkedin:hover {
+  color: #0a66c2;
+}
+.fa-github:hover {
   color: black;
+}
+
+@media screen and (max-width: 384px) {
+  #profilePic {
+    display: none;
+  }
 }
