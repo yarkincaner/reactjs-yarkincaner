@@ -20,12 +20,16 @@ export default class App extends Component {
         </div>
 
         <div className="col-start-2 col-span-5 flex flex-col h-screen pl-10 justify-center">
-          <div className="flex flex-row">
+          <div className="linkedin-icon">
             <a
-              className="border-2 border-solid rounded-full p-4 border-black"
+              className="border-black"
               href="www.linkedin.com/in/ali-yarkin-caner"
             >
-              <FontAwesomeIcon icon={faLinkedinIn} />
+              <FontAwesomeIcon
+                icon={faLinkedinIn}
+                size={"lg"}
+                className="bg-black border-2 border-solid rounded-full border-black p-4 fa-hover"
+              />
             </a>
           </div>
         </div>
