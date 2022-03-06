@@ -12,7 +12,7 @@ export default class App extends Component {
         <div className="w-full text-center justify-center p-6">
           <img
             id="profilePic"
-            src="/img/self_image.jpg"
+            src="img/self_image.jpg"
             alt="Ali Yarkın Caner"
             className="mx-auto h-auto max-w-xs max-h-80 border-4 border-solid rounded-full border-white"
           />
@@ -41,7 +41,7 @@ export default class App extends Component {
           </a>
         </div>
 
-        <hr className="self-center w-4/6 h-0.5 border-none bg-white" />
+        <hr className="self-center w-2/3 h-0.5 border-none bg-white" />
         <div className="p-6 w-2/3 text-xl text-white self-center">
           <p>
             A CSE student who has been entranced by the software development
