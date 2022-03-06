@@ -16,7 +16,7 @@ export default class App extends Component {
             alt="Ali Yarkın Caner"
             className="mx-auto h-auto max-w-xs max-h-80 border-4 border-solid rounded-full border-white"
           />
-          <h1 className="text-white font-bold text-5xl pt-2">
+          <h1 className="text-white font-bold text-4xl pt-2">
             Hey there! It's Yarkın
           </h1>
         </div>
@@ -55,7 +55,7 @@ export default class App extends Component {
         <footer className="left-0 bottom-0 w-full text-center">
           <div className="inline">
             <p className="text-gray-300">
-              Email via{" "}
+              Email me via{" "}
               <a
                 href="mailto:yarkincaner@gmail.com"
                 className="text-white underline"
