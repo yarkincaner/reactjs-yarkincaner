@@ -51,6 +51,20 @@ export default class App extends Component {
             developer.
           </p>
         </div>
+
+        <footer className="left-0 bottom-0 w-full text-center">
+          <div className="inline">
+            <p className="text-gray-300">
+              Email via{" "}
+              <a
+                href="mailto:yarkincaner@gmail.com"
+                className="text-white underline"
+              >
+                here
+              </a>
+            </p>
+          </div>
+        </footer>
       </div>
     );
   }
