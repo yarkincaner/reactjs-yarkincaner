@@ -50,7 +50,7 @@ export default class App extends Component {
         </div>
 
         <hr className="self-center w-2/3 h-0.5 border-none bg-white" />
-        <div className="p-6 w-2/3 text-xl text-white self-center">
+        <div id="summary" className="p-6 w-2/3 text-xl text-white self-center">
           <p>
             A CSE student who has been entranced by the software development
             process. Always eager to learn new technologies. Mainly done
