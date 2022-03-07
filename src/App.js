@@ -22,7 +22,11 @@ export default class App extends Component {
         </div>
 
         <div className="self-center pb-4 flex gap-4">
-          <a href="https://www.linkedin.com/in/ali-yarkin-caner/">
+          <a
+            href="https://www.linkedin.com/in/ali-yarkin-caner/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon
               icon={faLinkedinIn}
               size="2x"
@@ -31,7 +35,11 @@ export default class App extends Component {
             />
           </a>
 
-          <a href="https://github.com/yarkincaner">
+          <a
+            href="https://github.com/yarkincaner"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon
               icon={faGithub}
               size="2x"
@@ -58,6 +66,8 @@ export default class App extends Component {
               Email me via{" "}
               <a
                 href="mailto:yarkincaner@gmail.com"
+                target="_blank"
+                rel="noreferrer"
                 className="text-white underline"
               >
                 here
