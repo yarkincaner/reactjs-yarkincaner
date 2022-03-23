@@ -2,8 +2,11 @@ import "./App.scss";
 
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedinIn,
+  faGithub,
+  faHackerrank,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default class App extends Component {
   render() {
@@ -44,6 +47,19 @@ export default class App extends Component {
               icon={faGithub}
               size="2x"
               className="bg-transparent border-2 border-solid rounded-full border-white p-3 fa fa-github"
+              color="white"
+            />
+          </a>
+
+          <a
+            href="https://www.hackerrank.com/yarkincaner"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faHackerrank}
+              size="2x"
+              className="bg-transparent border-2 border-solid rounded-full border-white p-3 fa fa-hackerrank"
               color="white"
             />
           </a>

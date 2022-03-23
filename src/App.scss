@@ -40,6 +40,13 @@ body {
   color: black;
 }
 
+.fa-hackerrank {
+  transition: 0.15s;
+}
+.fa-hackerrank:hover {
+  color: #28b95a;
+}
+
 @media screen and (max-width: 384px) {
   #profilePic {
     display: none;
