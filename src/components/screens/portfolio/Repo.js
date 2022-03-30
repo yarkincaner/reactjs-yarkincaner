@@ -19,7 +19,7 @@ export default function Repo(props) {
   return (
     <a
       href={props.url}
-      className="group flex flex-col max-w-lg h-full font-mono font-extralight border border-gray-200 rounded overflow-hidden bg-inherit self-center"
+      className="group flex flex-col max-w-lg h-full border border-gray-200 rounded overflow-hidden bg-inherit self-center"
     >
       <div className="absolute hidden group-hover:flex p-2">
         <FontAwesomeIcon icon={faShare} size="2x" className="text-gray-200" />
@@ -29,11 +29,16 @@ export default function Repo(props) {
         {props.name}
       </h1>
       <p className="text-gray-200 flex-grow text-lg p-4">{props.description}</p>
+
       <footer className="bg-gray-200 border-t-2 border-gray-200 rounded-t-2xl bottom-0 p-2">
-        <p className="text-md font-semibold pb-4 pt-2 pl-2 text-gray-800">
-          Topics related:{" "}
-        </p>
-        <div className="flex flex-wrap gap-2">{topicsList}</div>
+        <div className="flex justify-center">
+          <hr className="h-0.5 w-2/6 mt-3 mr-2 bg-gray-800" />
+          <p className="text-md text-center font-semibold pb-4 text-gray-800">
+            Topics related
+          </p>
+          <hr className="h-0.5 w-2/6 mt-3 ml-2 bg-gray-800" />
+        </div>
+        <div className="flex flex-wrap gap-2 pl-2">{topicsList}</div>
       </footer>
     </a>
   );

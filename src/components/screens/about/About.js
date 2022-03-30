@@ -7,9 +7,10 @@ export function About() {
     <div className="flex flex-col p-6">
       <div className="w-full text-center justify-center p-6">
         <img
+          id="profilePic"
           src="img/self_image.jpg"
           alt="Ali Yarkın Caner"
-          className="mx-auto h-auto max-w-xs max-h-80 border-4 border-solid rounded-full border-white hidden sm:flex"
+          className="mx-auto h-auto max-w-xs max-h-80 border-4 border-solid rounded-full border-white"
         />
         <h1 className="text-white font-bold text-4xl pt-2">
           Hey there! It's Yarkın
@@ -19,7 +20,7 @@ export function About() {
       <SocialLinks />
 
       <hr className="self-center w-2/3 h-0.5 border-none bg-white" />
-      <div className="p-6 w-11/12 text-xl text-white self-center sm:w-2/3">
+      <div id="summary" className="p-6 w-2/3 text-xl text-white self-center">
         <p>
           A CSE student who has been entranced by the software development
           process. Always eager to learn new technologies. Mainly done projects
