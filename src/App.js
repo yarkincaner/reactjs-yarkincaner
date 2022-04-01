@@ -9,13 +9,13 @@ import { Portfolio } from "./components/screens/portfolio/Portfolio";
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <>
         <Navbar />
         <SlideRoutes animation="slide" duration={500}>
           <Route path="/" element={<About />} />
           <Route path="/Portfolio" element={<Portfolio />} />
         </SlideRoutes>
-      </div>
+      </>
     );
   }
 }

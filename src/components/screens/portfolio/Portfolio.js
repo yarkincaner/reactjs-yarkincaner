@@ -1,6 +1,5 @@
 import axios from "axios";
 import * as React from "react";
-import Loading from "../../Loading";
 import Repos from "./Repos";
 
 export function Portfolio() {
@@ -19,12 +18,7 @@ export function Portfolio() {
 
   React.useEffect(() => {
     fetchRepos();
-    setIsLoading(false);
   }, []);
-
-  if (isLoading) {
-    return <Loading />;
-  }
   return (
     <div className="pb-24 lg:pb-0 flex justify-center">
       <Repos repos={repos} />

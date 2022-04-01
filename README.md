@@ -5,6 +5,7 @@ Source code of the https://yarkincaner.me which is my personal website.
 ## Technologies Used
 
 - React.js
+- axios (To fetch repositories from github api)
 - Tailwind CSS
 - fontawesome
 
