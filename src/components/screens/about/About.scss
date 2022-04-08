@@ -4,18 +4,18 @@
   border-color: $foreground;
 }
 
+.header {
+  animation: 1s ease-out 0s 1 imageAnimation;
+}
+
 h1, p {
   color: $foreground;
 }
 
-hr {
+#aboutLine {
   width: 66.66%;
   background-color: $foreground;
-  transition: width 1s linear 1s;
-}
-
-hr::after {
-  width: 0;
+  animation: 1.5s ease-out 0s 1 lineWidthAnimation;
 }
 
 .fa:hover {
@@ -24,6 +24,7 @@ hr::after {
 
 .fa-linkedin {
   transition: 0.15s;
+  animation: 2s ease-out 0s 1 socialLinksAnimations;
 }
 .fa-linkedin:hover {
   color: #0a66c2;
@@ -31,6 +32,7 @@ hr::after {
 
 .fa-github {
   transition: 0.15s;
+  animation: 1.5s ease-out 0s 1 socialLinksAnimations;
 }
 .fa-github:hover {
   color: black;
@@ -38,9 +40,37 @@ hr::after {
 
 .fa-hackerrank {
   transition: 0.15s;
+  animation: 1s ease-out 0s 1 socialLinksAnimations;
 }
 .fa-hackerrank:hover {
   color: #28b95a;
+}
+
+@keyframes socialLinksAnimations {
+  0% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes lineWidthAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(100%);
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(100%);
+  }
 }
 
 @media screen and (max-width: 384px) {

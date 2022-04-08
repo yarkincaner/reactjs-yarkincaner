@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.scss";
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
         left: 0,
         right: 0,
       }}
-      className="relative z-0"
+      className="footer relative z-0"
     >
       <svg
         viewBox="0 0 500 150"
