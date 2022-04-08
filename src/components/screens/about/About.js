@@ -12,8 +12,7 @@ export function About() {
         {isLoading ? <Loading /> : null}
         <img
           id="profilePic"
-          // src="img/self_image.jpg"
-          src="https://picsum.photos/200/300"
+          src="img/self_image.jpg"
           alt="Ali Yarkın Caner"
           onLoad={() => setIsLoading(false)}
           style={isLoading ? { display: "none" } : {}}
