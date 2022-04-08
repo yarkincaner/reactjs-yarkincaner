@@ -1,18 +1,21 @@
+@import "../../Theme.scss";
+
 .middle {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  position: absolute;
+  position: relative;
+  padding: 2rem;
 }
 .bar {
   width: 10px;
   height: 70px;
-  background: #fff;
+  background: $foreground;
   display: inline-block;
   transform-origin: bottom center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  /*   box-shadow:5px 10px 20px inset rgba(255,23,25.2); */
+  box-shadow:5px 10px 20px $blue;
   animation: loader 1.2s linear infinite;
 }
 .bar1 {
@@ -43,11 +46,11 @@
 @keyframes loader {
   0% {
     transform: scaleY(0.1);
-    background: white;
+    background: $foreground;
   }
   50% {
     transform: scaleY(1);
-    background: #25b1e4;
+    background: $blue;
   }
   100% {
     transform: scaleY(0.1);

@@ -1,0 +1,39 @@
+@import "../../Theme.scss";
+
+.nav-container {
+  background-color: $secondary;
+}
+
+.navbar-link {
+  background-color: transparent;
+  color: $foreground;
+  border-color: $foreground;
+  transition: 0.15s;
+}
+
+.navbar-link:hover {
+  background-color: $foreground;
+  color: $backgroundColor;
+}
+
+.navbar-link-active {
+  background-color: $foreground;
+  color: $backgroundColor;
+}
+
+.nav-bottom {
+  background-color: $secondary;
+  border-color: $hover;
+}
+
+.nav-bottom-link {
+  background-color: transparent;
+  border-width: 1px;
+  border-color: $foreground;
+  color: $foreground;
+}
+
+.nav-bottom-link-active {
+  background-color: $foreground;
+  color: $secondary;
+}

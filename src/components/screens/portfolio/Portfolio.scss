@@ -1,0 +1,42 @@
+@import "../../../Theme.scss";
+
+.repo {
+	background: $secondary;
+	background: linear-gradient(45deg, $secondary 0%, $backgroundColor 50%, $secondary 100%);
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+	color: $foreground2;
+}
+
+.repo-name {
+	color: $foreground2;
+}
+
+.repo-description {
+	color: $foreground2;
+}
+
+.repo-footer {
+	background-color: $foreground2;
+}
+
+.topic-section-title {
+	color: $secondary;
+}
+
+.topic-section-line {
+	background-color: $secondary;
+}
+
+.topic {
+	background-color: $secondary;
+	color: $foreground2;
+	transition: 0.15s;
+}
+
+.topic:hover {
+	background-color: $backgroundColor;
+	color: $foreground;
+}

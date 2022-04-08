@@ -1,16 +1,17 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
+import "./Navbar.scss";
 
 export function Navbar() {
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-transparent p-3 w-full">
-      <div className="bg-gray-200 border-0 fixed inset-x-0 bottom-0 w-full flex gap-4 justify-center text-sm md:hidden p-4">
+    <nav className="flex items-center justify-between flex-wrap p-4 w-full rounded-b-xl">
+      <div className="nav-bottom border rounded-t-3xl bottom-0 fixed z-10 inset-x-0 w-full flex gap-4 justify-center text-sm md:hidden p-4">
         <NavLink
           to="/"
           className={(navdata) =>
             navdata.isActive
-              ? "text-xl p-2 rounded bg-gray-800 text-gray-200 font-semibold"
-              : "text-xl p-2 rounded border border-gray-800 text-gray-800 font-semibold"
+              ? "nav-bottom-link-active text-xl p-2 rounded font-semibold"
+              : "nav-bottom-link text-xl p-2 rounded border font-semibold"
           }
         >
           About
@@ -19,8 +20,8 @@ export function Navbar() {
           to="/Portfolio"
           className={(navdata) =>
             navdata.isActive
-              ? "text-xl p-2 rounded bg-gray-800 text-gray-200 font-semibold"
-              : "text-xl p-2 rounded border border-gray-800 text-gray-800 font-semibold"
+              ? "nav-bottom-link-active text-xl p-2 rounded font-semibold"
+              : "nav-bottom-link text-xl p-2 rounded border font-semibold"
           }
         >
           Portfolio
@@ -33,8 +34,8 @@ export function Navbar() {
             <NavLink
               className={(navData) =>
                 navData.isActive
-                  ? "text-xl inline-block p-2 border-b border-gray-200 rounded bg-gray-200 text-black"
-                  : "text-xl inline-block p-2 border-b border-gray-200 rounded bg-transparent text-gray-200 hover:bg-gray-200 hover:text-black hover:transition"
+                  ? "navbar-link-active text-xl inline-block p-2 border-b rounded"
+                  : "navbar-link text-xl inline-block p-2 border-b rounded"
               }
               to="/"
             >
@@ -45,8 +46,8 @@ export function Navbar() {
             <NavLink
               className={(navData) =>
                 navData.isActive
-                  ? "text-xl inline-block p-2 border-b border-gray-200 rounded bg-gray-200 text-black"
-                  : "text-xl inline-block p-2 border-b border-gray-200 rounded text-gray-200 no-underline hover:bg-gray-200 hover:text-black hover:transition"
+                  ? "navbar-link-active text-xl inline-block p-2 border-b rounded"
+                  : "navbar-link text-xl inline-block p-2 border-b rounded"
               }
               to="/Portfolio"
             >

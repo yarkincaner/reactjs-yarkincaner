@@ -1,26 +1,31 @@
 import "./About.scss";
-import React from "react";
+import { React, useState } from "react";
 import SocialLinks from "./SocialLinks";
+import Loading from "../../loading/Loading";
 
 export function About() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
-    <div className="flex flex-col p-6">
+    <div className="flex flex-col p-6 h-full">
       <div className="w-full text-center justify-center p-6">
+        {isLoading ? <Loading /> : null}
         <img
           id="profilePic"
-          src="img/self_image.jpg"
+          // src="img/self_image.jpg"
+          src="https://picsum.photos/200/300"
           alt="Ali Yarkın Caner"
-          className="mx-auto h-auto max-w-xs max-h-80 border-4 border-solid rounded-full border-white"
+          onLoad={() => setIsLoading(false)}
+          style={isLoading ? { display: "none" } : {}}
+          className="mx-auto h-auto max-w-xs max-h-80 border-4 border-solid rounded-full"
         />
-        <h1 className="text-white font-bold text-4xl pt-2">
-          Hey there! It's Yarkın
-        </h1>
+        <h1 className="font-bold text-4xl pt-2">Hey there! It's Yarkın</h1>
       </div>
 
       <SocialLinks />
 
-      <hr className="self-center w-2/3 h-0.5 border-none bg-white" />
-      <div id="summary" className="p-6 w-2/3 text-xl text-white self-center">
+      <hr className="self-center h-0.5 border-none" />
+      <div id="summary" className="p-6 w-2/3 text-xl self-center">
         <p>
           A CSE student who has been entranced by the software development
           process. Always eager to learn new technologies. Mainly done projects
@@ -28,7 +33,6 @@ export function About() {
           in web development. My true purpose is to be a full-stack developer.
         </p>
       </div>
-
       <footer className="pb-24 md:pb-0 w-full text-center">
         <div className="inline">
           <p className="text-gray-300">
