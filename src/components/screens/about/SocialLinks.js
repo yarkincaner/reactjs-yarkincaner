@@ -17,7 +17,7 @@ export default function SocialLinks() {
         <FontAwesomeIcon
           icon={faLinkedinIn}
           size="2x"
-          className="bg-transparent border-2 border-solid rounded-full border-white p-3 fa fa-linkedin"
+          className="bg-transparent border-2 border-solid rounded-full border-white p-3 fa linkedin-about"
           color="white"
         />
       </a>
@@ -26,7 +26,7 @@ export default function SocialLinks() {
         <FontAwesomeIcon
           icon={faGithub}
           size="2x"
-          className="bg-transparent border-2 border-solid rounded-full border-white p-3 fa fa-github"
+          className="bg-transparent border-2 border-solid rounded-full border-white p-3 fa github-about"
           color="white"
         />
       </a>
@@ -39,7 +39,7 @@ export default function SocialLinks() {
         <FontAwesomeIcon
           icon={faHackerrank}
           size="2x"
-          className="bg-transparent border-2 border-solid rounded-full border-white p-3 fa fa-hackerrank"
+          className="bg-transparent border-2 border-solid rounded-full border-white p-3 fa hackerrank-about"
           color="white"
         />
       </a>

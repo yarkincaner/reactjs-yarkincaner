@@ -80,7 +80,7 @@ export default function Repos() {
   }, [filters]);
 
   return (
-    <div className="p-2 sm:p-3 md:p-4 lg:p-5 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="p-2 mb-4 sm:p-3 md:p-4 lg:p-5 grid grid-cols-1 md:grid-cols-2 gap-8">
       {repos.length !== 0 ? repoList : <Loading />}
     </div>
   );

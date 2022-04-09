@@ -2,6 +2,7 @@
 
 #profilePic {
   border-color: $foreground;
+  animation: profilePicFlickerAnimation 2s infinite;
 }
 
 .header {
@@ -22,28 +23,42 @@ h1, p {
   background-color: $foreground;
 }
 
-.fa-linkedin {
+.linkedin-about {
   transition: 0.15s;
   animation: 2s ease-out 0s 1 socialLinksAnimations;
 }
-.fa-linkedin:hover {
+.linkedin-about:hover {
   color: #0a66c2;
 }
 
-.fa-github {
+.github-about {
   transition: 0.15s;
   animation: 1.5s ease-out 0s 1 socialLinksAnimations;
 }
-.fa-github:hover {
+.github-about:hover {
   color: black;
 }
 
-.fa-hackerrank {
+.hackerrank-about {
   transition: 0.15s;
   animation: 1s ease-out 0s 1 socialLinksAnimations;
 }
-.fa-hackerrank:hover {
+.hackerrank-about:hover {
   color: #28b95a;
+}
+@keyframes profilePicFlickerAnimation {
+  0% {
+    box-shadow: 0px 0px 5px 0px $foreground2;
+  }
+  50% {
+    box-shadow: 0px 0px 1px 0px $foreground2;
+  }
+  55% {
+    box-shadow: 0px 0px 5px 0px $foreground2;
+  }
+  100% {
+    box-shadow: 0px 0px 5px 0px $foreground2;
+  }
 }
 
 @keyframes socialLinksAnimations {

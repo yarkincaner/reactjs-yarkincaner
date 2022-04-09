@@ -1,19 +1,14 @@
 import React from "react";
 import { faShare } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Topic from "./Topic";
 
 export default function Repo(props) {
   const topicsList =
     props.topics.length !== 0 ? (
       props.topics.map((topic) => (
-        <button
-          key={topic.id}
-          // onFocus={(e) => e.target.focus()}
-          onClick={() => props.onClick(topic)}
-          className="topic shadow-md rounded-lg text-center p-2 text-sm"
-        >
-          {topic}
-        </button>
+        <Topic key={topic.id} topic={topic} onClick={props.onClick} />
       ))
     ) : (
       <p
@@ -25,10 +20,14 @@ export default function Repo(props) {
     );
 
   return (
-    <div className="repo flex flex-col max-w-lg h-full rounded-2xl overflow-hidden bg-inherit self-center">
+    <div className="repo flex flex-col max-w-lg h-full md:hover:scale-110 transition rounded-2xl overflow-hidden">
       <a target="_blank" className="group flex-grow" href={props.url}>
-        <div className="absolute hidden group-hover:transition-all group-hover:flex p-2">
-          <FontAwesomeIcon icon={faShare} size="2x" className="icon" />
+        <div className="absolute hidden group-hover:flex p-2">
+          <FontAwesomeIcon
+            icon={faGithub}
+            size="2x"
+            className="icon animate-pulse transition-all"
+          />
         </div>
 
         <h1 className="repo-name text-2xl font-semibold text-center p-4">

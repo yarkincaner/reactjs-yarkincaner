@@ -13,7 +13,7 @@ export default class App extends Component {
     return (
       <div className="flex flex-col w-full h-full">
         <Navbar />
-        <SlideRoutes animation="slide" duration={500}>
+        <SlideRoutes animation="slide" duration={500} timing="ease-out">
           <Route path="/" element={<About />} />
           <Route path="/Portfolio" element={<Portfolio />} />
         </SlideRoutes>
