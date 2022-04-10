@@ -34,20 +34,18 @@ export function About() {
           in web development. My true purpose is to be a full-stack developer.
         </p>
       </div>
-      <footer className="pb-24 md:pb-0 w-full text-center">
-        <div className="inline">
-          <p className="text-gray-300">
-            Email me via{" "}
-            <a
-              href="mailto:yarkincaner@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              className="text-white underline"
-            >
-              here
-            </a>
-          </p>
-        </div>
+      <footer className="inline bottom-0 pb-24 md:pb-0 w-full text-center">
+        <p className="text-gray-300">
+          Email me via{" "}
+          <a
+            href="mailto:yarkincaner@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="text-white underline"
+          >
+            here
+          </a>
+        </p>
       </footer>
     </div>
   );

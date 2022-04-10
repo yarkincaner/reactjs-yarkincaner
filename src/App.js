@@ -17,7 +17,7 @@ export default class App extends Component {
           <Route path="/" element={<About />} />
           <Route path="/Portfolio" element={<Portfolio />} />
         </SlideRoutes>
-        <Footer className="pt-12 mb-0" />
+        <Footer className="flex-grow justify-end pt-12 mb-0" />
       </div>
     );
   }
