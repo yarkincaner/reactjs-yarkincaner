@@ -5,7 +5,6 @@ export default function Footer() {
   return (
     <div
       style={{
-        // position: "fixed",
         height: "180px",
         width: "100%",
         overflow: "hidden",
@@ -13,7 +12,7 @@ export default function Footer() {
         left: 0,
         right: 0,
       }}
-      className="footer relative z-0"
+      className="footer relative pt-10 z-0"
     >
       <svg
         viewBox="0 0 500 150"

@@ -16,7 +16,7 @@ h1, p {
 #aboutLine {
   width: 66.66%;
   background-color: $foreground;
-  animation: 1.5s ease-out 0s 1 lineWidthAnimation;
+  animation: 1.5s ease-out lineWidthAnimation;
 }
 
 .fa:hover {
@@ -25,7 +25,7 @@ h1, p {
 
 .linkedin-about {
   transition: 0.15s;
-  animation: 2s ease-out 0s 1 socialLinksAnimations;
+  animation: 2s ease-out socialLinksAnimations;
 }
 .linkedin-about:hover {
   color: #0a66c2;
@@ -33,7 +33,7 @@ h1, p {
 
 .github-about {
   transition: 0.15s;
-  animation: 1.5s ease-out 0s 1 socialLinksAnimations;
+  animation: 1.5s ease-out socialLinksAnimations;
 }
 .github-about:hover {
   color: black;
@@ -41,7 +41,7 @@ h1, p {
 
 .hackerrank-about {
   transition: 0.15s;
-  animation: 1s ease-out 0s 1 socialLinksAnimations;
+  animation: 1s ease-out socialLinksAnimations;
 }
 .hackerrank-about:hover {
   color: #28b95a;

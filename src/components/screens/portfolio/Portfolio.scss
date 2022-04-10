@@ -1,5 +1,17 @@
 @import "../../../Theme.scss";
 
+#filterBar {
+	background-color: $foreground2;
+}
+
+#filterBarTitle {
+	color: $secondary;
+}
+
+.filter {
+	background-color: $secondary;
+}
+
 .repo {
 	background: $secondary;
 	background: linear-gradient(45deg, $secondary 0%, $backgroundColor 50%, $secondary 100%);
@@ -37,7 +49,6 @@
 	color: $foreground2;
 	transition: 0.15s;
 }
-
 .topic:hover {
 	background-color: $backgroundColor;
 	color: $foreground;

@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import axios from "axios";
 import Repo from "./Repo";
 import Loading from "../../loading/Loading";
+import FilterBar from "./FilterBar";
 
 export default function Repos() {
   const [repos, setRepos] = useState([]);
@@ -80,8 +81,13 @@ export default function Repos() {
   }, [filters]);
 
   return (
-    <div className="p-2 mb-4 sm:p-3 md:p-4 lg:p-5 grid grid-cols-1 md:grid-cols-2 gap-8">
-      {repos.length !== 0 ? repoList : <Loading />}
-    </div>
+    <>
+      <div className="pt-8 pb-4 px-4 sm:px-16 md:px-32 lg:px-64 w-full">
+        <FilterBar filters={filters} />
+      </div>
+      <div className="p-2 mb-4 sm:p-3 md:p-4 lg:p-5 grid grid-cols-1 md:grid-cols-2 gap-12">
+        {repos.length !== 0 ? repoList : <Loading />}
+      </div>
+    </>
   );
 }
