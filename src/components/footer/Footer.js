@@ -4,26 +4,17 @@ import "./Footer.scss";
 export default function Footer() {
   return (
     <div
-      style={{
-        height: "180px",
-        width: "100%",
-        overflow: "hidden",
-        bottom: 0,
-        left: 0,
-        right: 0,
-      }}
-      className="footer relative pt-10 z-0"
+      style={
+        {
+          // overflow: "hidden",
+        }
+      }
+      className="relative pb-24 bottom-10 lg:pb-0 lg:bottom-0 left-0 right-0 footer h-1/5 z-0"
     >
-      <svg
-        viewBox="0 0 500 150"
-        preserveAspectRatio="none"
-        style={{ height: "100%", width: "100%" }}
-      >
-        <path
-          d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-          style={{ stroke: "none", fill: "#2E3440" }}
-        ></path>
-      </svg>
+      <h1 className="w-full h-2/3 bottom-0 flex flex-col justify-end mt-2 text-center">
+        Copyright © 2022 yarkincaner
+      </h1>
+      <div class="curve"></div>
     </div>
   );
 }

@@ -1,10 +1,13 @@
-import { React } from "react";
+import { React, useState } from "react";
 import Repos from "./Repos";
 import "./Portfolio.scss";
+import Loading from "../../loading/Loading";
 
 export function Portfolio() {
+  // const [isLoading, setLoading] = useState(true);
   return (
-    <div className="pb-24 lg:pb-0 flex flex-col items-center">
+    <div className="pb-12 flex flex-col items-center">
+      {/* {isLoading ? <Loading /> : null} */}
       <Repos />
     </div>
   );

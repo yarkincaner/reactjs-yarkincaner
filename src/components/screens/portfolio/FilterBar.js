@@ -5,7 +5,7 @@ export default function FilterBar(props) {
 
   useEffect(() => {
     setFilters(props.filters);
-    console.log(filters);
+    // console.log(filters);
   }, [props]);
 
   return (

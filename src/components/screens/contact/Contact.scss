@@ -1,0 +1,15 @@
+@import "../../../Theme.scss";
+
+.form-container {
+	background-color: $secondary;
+}
+
+.form-submit-button {
+	transition: 0.15s;
+	background-image: linear-gradient(to bottom right, $green 0%, #74a687 100%);
+}
+
+.form-submit-button:hover {
+
+	background-position: right center;
+}

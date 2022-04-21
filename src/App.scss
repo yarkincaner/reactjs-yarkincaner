@@ -6,4 +6,8 @@ body {
   height: 100%;
   margin: 0;
   background-color: $backgroundColor;
+  background-image: url("components/navbar/navbarBackground.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 15%;
 }

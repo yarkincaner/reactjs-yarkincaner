@@ -26,7 +26,7 @@ export function About() {
       <SocialLinks />
 
       <hr id="aboutLine" className="self-center h-0.5 border-none" />
-      <div id="summary" className="p-6 w-2/3 text-xl self-center">
+      <div id="summary" className="p-6 w-2/3 text-xl self-center flex-grow">
         <p>
           A CSE student who has been entranced by the software development
           process. Always eager to learn new technologies. Mainly done projects
@@ -34,19 +34,6 @@ export function About() {
           in web development. My true purpose is to be a full-stack developer.
         </p>
       </div>
-      <footer className="inline bottom-0 pb-24 md:pb-0 w-full text-center">
-        <p className="text-gray-300">
-          Email me via{" "}
-          <a
-            href="mailto:yarkincaner@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-            className="text-white underline"
-          >
-            here
-          </a>
-        </p>
-      </footer>
     </div>
   );
 }

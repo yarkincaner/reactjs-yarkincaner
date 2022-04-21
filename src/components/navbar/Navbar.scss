@@ -1,5 +1,9 @@
 @import "../../Theme.scss";
 
+nav {
+  // background-image: url("navbarBackground.svg");
+}
+
 .nav-container {
   background-color: $secondary;
 }
@@ -28,12 +32,13 @@
 
 .nav-bottom-link {
   background-color: transparent;
-  border-width: 1px;
-  border-color: $foreground;
   color: $foreground;
 }
 
 .nav-bottom-link-active {
   background-color: $foreground;
+  color: $secondary;
+}
+.nav-bottom-link-active > p {
   color: $secondary;
 }
