@@ -4,41 +4,39 @@ nav {
   // background-image: url("navbarBackground.svg");
 }
 
-.nav-container {
-  background-color: $secondary;
-}
-
 .navbar-link {
+  color: $foreground2;
+  border-color: $foreground2;
   background-color: transparent;
-  color: $foreground;
-  border-color: $foreground;
   transition: 0.15s;
 }
 
 .navbar-link:hover {
-  background-color: $foreground;
-  color: $backgroundColor;
+  color: $backgroundColorLight;
+  background-color: $foreground2;
 }
 
 .navbar-link-active {
-  background-color: $foreground;
-  color: $backgroundColor;
+  color: $foreground2;
+  border-color: $foreground2;
+  background-color: $backgroundColor;
 }
 
 .nav-bottom {
-  background-color: $secondary;
-  border-color: $hover;
+  background-color: $backgroundColor;
+  box-shadow: 0 0 3px 1px $backgroundColorLight;
+  // border-color: $backgroundColorLight;
 }
 
 .nav-bottom-link {
-  background-color: transparent;
   color: $foreground;
 }
 
 .nav-bottom-link-active {
-  background-color: $foreground;
-  color: $secondary;
-}
-.nav-bottom-link-active > p {
-  color: $secondary;
+  background-color: $foreground2;
+  color: $backgroundColor;
+
+  p {
+    color: $backgroundColor;
+  }
 }

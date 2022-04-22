@@ -8,7 +8,9 @@ import { About } from "./components/screens/about/About";
 import { Portfolio } from "./components/screens/portfolio/Portfolio";
 import Contact from "./components/screens/contact/Contact";
 
-// TODO: Show status of internet connection to user via NetInfo or something else
+// TODO: Show status of internet connection to user via NetInfo or something else.
+// TODO: Finish Contact page.
+// TODO: Add Skills component to About page.
 export default function App() {
   return (
     <>
@@ -16,7 +18,7 @@ export default function App() {
       <SlideRoutes animation="slide" duration={500} timing="ease-out">
         <Route path="/" element={<About />} />
         <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/Contact" element={<Contact />} />
+        {/* <Route path="/Contact" element={<Contact />} /> */}
       </SlideRoutes>
       <Footer className="mb-0" />
     </>

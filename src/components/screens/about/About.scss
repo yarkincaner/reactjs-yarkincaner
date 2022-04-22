@@ -1,7 +1,7 @@
 @import "../../../Theme.scss";
 
 #profilePic {
-  border-color: $foreground;
+  border-color: $foreground2;
   // animation: profilePicFlickerAnimation 2s infinite;
 }
 
@@ -10,22 +10,29 @@
 }
 
 h1, p {
-  color: $foreground;
+  color: $foreground2;
 }
 
 #aboutLine {
   width: 66.66%;
-  background-color: $foreground;
+  background-color: $foreground2;
   animation: 1.5s ease-out lineWidthAnimation;
 }
 
 .fa:hover {
-  background-color: $foreground;
+  background-color: $foreground2;
 }
+
+// .fa {
+//   transition: 0.15s;
+//   animation: socialLinksAnimations 0s ease-out;
+// }
 
 .linkedin-about {
   transition: 0.15s;
   animation: 2s ease-out socialLinksAnimations;
+  border-color: $foreground2;
+  color: $foreground2;
 }
 .linkedin-about:hover {
   color: #0a66c2;
@@ -34,6 +41,8 @@ h1, p {
 .github-about {
   transition: 0.15s;
   animation: 1.5s ease-out socialLinksAnimations;
+  border-color: $foreground2;
+  color: $foreground2;
 }
 .github-about:hover {
   color: black;
@@ -42,6 +51,8 @@ h1, p {
 .hackerrank-about {
   transition: 0.15s;
   animation: 1s ease-out socialLinksAnimations;
+  border-color: $foreground2;
+  color: $foreground2;
 }
 .hackerrank-about:hover {
   color: #28b95a;

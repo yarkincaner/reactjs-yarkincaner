@@ -75,12 +75,14 @@ export default function Contact() {
           <textarea name="" rows={8} className="rounded-md resize-y"></textarea>
         </div>
 
-        <button
-          type="button"
-          class="form-submit-button text-white font-medium rounded-lg text-sm p-4 ml-8 mb-4 justify-center w-1/4"
-        >
-          Blue
-        </button>
+        <div className="flex justify-end">
+          <button
+            type="button"
+            class="form-submit-button text-white font-medium rounded-lg text-sm p-4 mr-8 mb-4 justify-center w-1/4"
+          >
+            Send Mail
+          </button>
+        </div>
       </form>
     </div>
   );

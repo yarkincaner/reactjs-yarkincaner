@@ -2,6 +2,7 @@ import "./About.scss";
 import { React, useState } from "react";
 import SocialLinks from "./SocialLinks";
 import Loading from "../../loading/Loading";
+import Skills from "./Skills";
 
 export function About() {
   const [isLoading, setIsLoading] = useState(true);

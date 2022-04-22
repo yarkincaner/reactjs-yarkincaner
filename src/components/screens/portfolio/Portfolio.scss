@@ -5,16 +5,16 @@
 }
 
 #filterBarTitle {
-	color: $secondary;
+	color: $backgroundColorLight;
 }
 
 .filter {
-	background-color: $secondary;
+	color: $foreground2;
+	background-color: $backgroundColorLight;
 }
 
 .repo {
-	background: $secondary;
-	background: linear-gradient(45deg, $secondary 0%, $backgroundColor 50%, $secondary 100%);
+	background: linear-gradient(45deg, $backgroundColorLight 0%, $backgroundColor 50%, $backgroundColorLight 100%);
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	animation: repoAnimation 0s ease-out;
 }
@@ -33,25 +33,26 @@
 }
 
 .repo-footer {
+	border-color: $backgroundColor;
 	background-color: $foreground2;
 }
 
 .topic-section-title {
-	color: $secondary;
+	color: $backgroundColorLight;
 }
 
 .topic-section-line {
-	background-color: $secondary;
+	background-color: $backgroundColorLight;
 }
 
 .topic {
-	background-color: $secondary;
+	background-color: $backgroundColorLight;
 	color: $foreground2;
 	transition: 0.15s;
 }
 .topic:hover {
 	background-color: $backgroundColor;
-	color: $foreground;
+	color: $foreground2;
 }
 
 @for $i from 1 through 100 {

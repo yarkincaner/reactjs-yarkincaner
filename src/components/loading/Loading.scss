@@ -15,7 +15,7 @@
   transform-origin: bottom center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  box-shadow:5px 10px 20px $blue;
+  box-shadow:5px 10px 20px $primary;
   animation: loader 1.2s linear infinite;
 }
 .bar1 {
@@ -50,7 +50,7 @@
   }
   50% {
     transform: scaleY(1);
-    background: $blue;
+    background: $primary;
   }
   100% {
     transform: scaleY(0.1);
