@@ -12,6 +12,7 @@ import {
   faAddressBook as faAddressBookActive,
   faEnvelope as faEnvelopeActive,
 } from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export function Navbar() {
   return (
@@ -37,7 +38,11 @@ export function Navbar() {
               </div>
             ) : (
               <div className="inline-block">
-                <FontAwesomeIcon className="w-full" size="lg" icon={faUser} />
+                <FontAwesomeIcon
+                  className="w-full"
+                  size="lg"
+                  icon={faUser as IconProp}
+                />
                 <p className="text-xs">About</p>
               </div>
             )
@@ -66,7 +71,7 @@ export function Navbar() {
                 <FontAwesomeIcon
                   className="w-full"
                   size="lg"
-                  icon={faAddressBook}
+                  icon={faAddressBook as IconProp}
                 />
                 <p className="text-xs">Portfolio</p>
               </div>

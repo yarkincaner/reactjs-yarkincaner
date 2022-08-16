@@ -1,14 +1,20 @@
 import "./About.scss";
-import { React, useState } from "react";
+import React, { useState } from "react";
 import SocialLinks from "./SocialLinks";
 import Loading from "../../loading/Loading";
-import Skills from "./Skills";
+// import Skills from "./Skills";
+import { motion } from "framer-motion";
 
 export function About() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="flex flex-col p-6 h-full">
+    <motion.div
+      className="flex flex-col p-6 h-full"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.4 } }}
+    >
       <div className="w-full text-center justify-center p-6">
         {isLoading ? <Loading /> : null}
         <div className="header">
@@ -35,6 +41,6 @@ export function About() {
           in web development. My true purpose is to be a full-stack developer.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }

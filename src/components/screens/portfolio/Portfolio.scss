@@ -55,6 +55,16 @@
 	color: $foreground2;
 }
 
+.topic-active {
+	background-color: $primary;
+	color: $foreground2;
+	transition: 0.15s;
+}
+.topic-active:hover {
+	background-color: $danger;
+	color: $foreground2;
+}
+
 @for $i from 1 through 100 {
 	$a: $i / 2;
 	.repo:nth-child(#{$i}n) {
