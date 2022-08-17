@@ -5,6 +5,8 @@ interface ContextState {
   setRepos: (value: React.ReactElement[]) => void;
   filters: Array<string>;
   setFilters: (value: Array<string>) => void;
+  isMailSent: boolean;
+  setIsMailSent: (value: boolean) => void;
 }
 
 export const Context = createContext<ContextState>({
@@ -12,6 +14,8 @@ export const Context = createContext<ContextState>({
   setRepos: () => {},
   filters: [],
   setFilters: () => {},
+  isMailSent: false,
+  setIsMailSent: () => {},
 });
 
 interface IContextProvider {
@@ -23,11 +27,15 @@ export const ContextProvider = ({ children }: IContextProvider) => {
 
   const [repos, setRepos] = useState<React.ReactElement[]>([]);
 
+  const [isMailSent, setIsMailSent] = useState<boolean>(false);
+
   const values = {
     repos,
     setRepos,
     filters,
     setFilters,
+    isMailSent,
+    setIsMailSent,
   };
 
   return <Context.Provider value={values}>{children}</Context.Provider>;
