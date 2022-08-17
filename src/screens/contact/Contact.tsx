@@ -3,7 +3,7 @@ import validationSchema from "./validation";
 import React, { useContext } from "react";
 import "./Contact.scss";
 import { motion } from "framer-motion";
-import Context from "../../../context/context";
+import Context from "../../context/context";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";

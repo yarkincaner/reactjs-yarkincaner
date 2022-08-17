@@ -14,7 +14,6 @@ export default function Footer() {
       <h1 className="w-full h-2/3 bottom-0 flex flex-col justify-end mt-2 text-center">
         Copyright © 2022 yarkincaner
       </h1>
-      <div className="curve"></div>
     </div>
   );
 }

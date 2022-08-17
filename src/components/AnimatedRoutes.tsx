@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { About } from "./screens/about/About";
-import { Portfolio } from "./screens/portfolio/Portfolio";
-import Contact from "./screens/contact/Contact";
+import { About } from "../screens/about/About";
+import { Portfolio } from "../screens/portfolio/Portfolio";
+import Contact from "../screens/contact/Contact";
 import { AnimatePresence } from "framer-motion";
 
 type Props = {};

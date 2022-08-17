@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import Context from "../../../context/context";
+import Context from "../../context/context";
 import Topic from "./Topic";
 
 export default function FilterBar() {

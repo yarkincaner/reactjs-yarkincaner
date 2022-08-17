@@ -1,4 +1,4 @@
-@import "../../../Theme.scss";
+@import "../../Theme.scss";
 
 #profilePic {
   border-color: $foreground2;
@@ -14,7 +14,6 @@ h1, p {
 }
 
 #aboutLine {
-  width: 66.66%;
   background-color: $foreground2;
   animation: 1.5s ease-out lineWidthAnimation;
 }

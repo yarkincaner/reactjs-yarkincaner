@@ -1,7 +1,7 @@
 import "./About.scss";
 import React, { useState } from "react";
 import SocialLinks from "./SocialLinks";
-import Loading from "../../loading/Loading";
+import Loading from "../../components/loading/Loading";
 // import Skills from "./Skills";
 import { motion } from "framer-motion";
 
@@ -10,7 +10,7 @@ export function About() {
 
   return (
     <motion.div
-      className="flex flex-col p-6 h-full"
+      className="flex flex-col p-6"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.4 } }}
@@ -32,8 +32,14 @@ export function About() {
 
       <SocialLinks />
 
-      <hr id="aboutLine" className="self-center h-0.5 border-none" />
-      <div id="summary" className="p-6 w-2/3 text-xl self-center flex-grow">
+      <hr
+        id="aboutLine"
+        className="self-center h-0.5 md:w-2/3 w-11/12 border-none"
+      />
+      <div
+        id="summary"
+        className="py-4 md:p-6 md:w-2/3 w-full text-xl self-center flex-grow"
+      >
         <p>
           A CSE student who has been entranced by the software development
           process. Always eager to learn new technologies. Mainly done projects

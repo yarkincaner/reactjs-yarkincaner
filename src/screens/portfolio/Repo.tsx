@@ -34,9 +34,14 @@ const Repo = (props: Props) => {
       <footer className="repo-footer border-t-2 rounded-t-2xl bottom-0 p-2">
         <div className="flex justify-center">
           <hr className="topic-section-line h-0.5 w-2/6 mt-3 mr-2" />
-          <p className="topic-section-title text-md text-center font-semibold pb-4">
-            Topics related
-          </p>
+          <div className="grid grid-cols-2">
+            <p className="topic-section-title text-md text-left font-semibold pb-4">
+              Topics
+            </p>
+            <p className="topic-section-title text-md text-right font-semibold pb-4">
+              related
+            </p>
+          </div>
           <hr className="topic-section-line h-0.5 w-2/6 mt-3 ml-2" />
         </div>
         <div className="flex flex-wrap gap-2 pl-2">

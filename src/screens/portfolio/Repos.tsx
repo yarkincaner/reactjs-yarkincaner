@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Context } from "../../../context/context";
+import { Context } from "../../context/context";
 import Repo from "./Repo";
 
 export default function Repos() {
