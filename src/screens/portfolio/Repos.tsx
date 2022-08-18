@@ -21,8 +21,12 @@ export default function Repos() {
   }, [context.filters]);
 
   return (
-    <div className="grid md:grid-cols-2 gap-8 p-2 md:p-8">
-      {activeRepos ? activeRepos : <h1>There are no repositories</h1>}
+    <div className="grid md:grid-cols-4 gap-8 p-2 md:p-8 w-full content-center">
+      <div></div>
+      <div className="grid md:grid-cols-2 gap-8 col-span-2 content-center place-items-center">
+        {activeRepos ? activeRepos : <h1>There are no repositories</h1>}
+      </div>
+      <div></div>
     </div>
   );
 }

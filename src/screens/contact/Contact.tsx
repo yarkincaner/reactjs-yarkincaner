@@ -138,6 +138,7 @@ const Contact = (props: Props) => {
               onBlur={handleBlur}
               rows={8}
               className="rounded-md resize-y w-full"
+              placeholder="..."
             ></textarea>
             {errors.message && touched.message && (
               <div className="error">{errors.message}</div>
