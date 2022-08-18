@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import Repos from "./Repos";
 import "./Portfolio.scss";
-import Loading from "../../loading/Loading";
-import Context from "../../../context/context";
+import Loading from "../../components/loading/Loading";
+import Context from "../../context/context";
 import axios from "axios";
 import FilterBar from "./FilterBar";
 import { motion } from "framer-motion";

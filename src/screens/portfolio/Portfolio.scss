@@ -1,4 +1,4 @@
-@import "../../../Theme.scss";
+@import "../../Theme.scss";
 
 #filterBar {
 	background-color: $foreground2;
@@ -61,7 +61,7 @@
 	transition: 0.15s;
 }
 .topic-active:hover {
-	background-color: $danger;
+	background-color: $myRed;
 	color: $foreground2;
 }
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import Context from "../../../context/context";
+import Context from "../../context/context";
 import Topic from "./Topic";
 
 export default function FilterBar() {
@@ -8,7 +8,7 @@ export default function FilterBar() {
   return (
     <div
       id="filterBar"
-      className="flex flex-wrap rounded-lg p-2 gap-2 w-full md:w-7/12"
+      className="flex flex-wrap rounded-lg p-2 gap-2 w-full lg:w-1/2"
     >
       <h1 id="filterBarTitle" className="px-4 py-2 font-bold">
         Filters:

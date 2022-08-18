@@ -17,7 +17,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 export function Navbar() {
   return (
     <nav className="flex items-center justify-between flex-wrap p-4 w-full rounded-b-xl">
-      <div className="nav-bottom rounded-t-3xl bottom-0 fixed z-10 inset-x-0 w-full flex gap-4 justify-evenly text-sm md:hidden p-4">
+      <div className="nav-bottom rounded-t-3xl bottom-0 fixed z-10 inset-x-0 w-full flex justify-evenly text-sm md:hidden p-4">
         <NavLink
           to="/"
           className={(navdata) =>
@@ -78,7 +78,7 @@ export function Navbar() {
             )
           }
         </NavLink>
-        {/* <NavLink
+        <NavLink
           to="/Contact"
           className={(navdata) =>
             navdata.isActive
@@ -102,14 +102,14 @@ export function Navbar() {
               <div className="inline-block">
                 <FontAwesomeIcon
                   className="w-full"
-                  icon={faEnvelope}
+                  icon={faEnvelope as IconProp}
                   size="lg"
                 />
                 <p className="text-xs">Contact</p>
               </div>
             )
           }
-        </NavLink> */}
+        </NavLink>
       </div>
 
       <div className="w-full flex-grow md:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0">
@@ -138,7 +138,7 @@ export function Navbar() {
               Portfolio
             </NavLink>
           </li>
-          {/* <li>
+          <li>
             <NavLink
               className={(navData) =>
                 navData.isActive
@@ -149,7 +149,7 @@ export function Navbar() {
             >
               Contact
             </NavLink>
-          </li> */}
+          </li>
         </ul>
       </div>
     </nav>
