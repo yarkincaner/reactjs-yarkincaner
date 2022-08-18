@@ -1,9 +1,9 @@
 @import "../../Theme.scss";
 
-.form-container {
-	// background: linear-gradient(45deg, $backgroundColorLight 0%, $backgroundColor 50%, $backgroundColorLight 100%);
-	// box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
+// .form-container {
+// 	background: linear-gradient(45deg, $backgroundColorLight 0%, $backgroundColor 50%, $backgroundColorLight 100%);
+// 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+// }
 
 label {
 	color: $foreground2;
@@ -22,7 +22,6 @@ label {
 	// background-image: linear-gradient(130deg, $primary 0%, $primaryLight 100%);
 	// background-size: 300% 100%;
 }
-
 .form-submit-button:hover {
 	// background-position: 100% 0;
 	// background-position: right center;
@@ -30,7 +29,14 @@ label {
 	// border-color: $primaryLight;
 	color: $backgroundColor;
 }
-.form-submit-button:disabled {
+
+.form-submit-button-sending {
+	transition: 0.2s;
+	background-color: $backgroundColorLight;
+	color: $foreground2;
+}
+
+.form-submit-button-disabled {
 	background-color: $primary;
 	color: $foreground2;
 }
