@@ -19,7 +19,7 @@ const Contact = (props: Props) => {
     await emailjs
       .send("service_3j9nluv", "template_cq20gcl", values, "fIqZ4-sMvKLKxsdS1")
       .then(() => {
-        console.log("email sent");
+        // console.log("email sent");
         setIsMailSent(true);
         setSendingMail(false);
       })
@@ -35,7 +35,7 @@ const Contact = (props: Props) => {
         message: "",
       },
       onSubmit: (values) => {
-        console.log(values);
+        // console.log(values);
         setSendingMail(true);
         sendEmail(values);
       },
