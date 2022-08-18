@@ -26,7 +26,7 @@ const Topic = (props: Props) => {
       array.sort();
       setFilters(array);
     }
-    console.log(filters);
+    // console.log(filters);
   };
 
   return (
