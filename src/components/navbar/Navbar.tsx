@@ -17,7 +17,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 export function Navbar() {
   return (
     <nav className="flex items-center justify-between flex-wrap p-4 w-full rounded-b-xl">
-      <div className="nav-bottom rounded-t-3xl bottom-0 fixed z-10 inset-x-0 w-full flex gap-4 justify-evenly text-sm md:hidden p-4">
+      <div className="nav-bottom rounded-t-3xl bottom-0 fixed z-10 inset-x-0 w-full flex justify-evenly text-sm md:hidden p-4">
         <NavLink
           to="/"
           className={(navdata) =>
