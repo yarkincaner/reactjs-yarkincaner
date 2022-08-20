@@ -1,8 +1,10 @@
-import React, { useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 import Context from "../../context/context";
 import Topic from "./Topic";
 
-export default function FilterBar() {
+type Props = {};
+
+const FilterBar = (props: Props) => {
   const { filters } = useContext(Context);
 
   return (
@@ -24,4 +26,6 @@ export default function FilterBar() {
       )}
     </div>
   );
-}
+};
+
+export default FilterBar;

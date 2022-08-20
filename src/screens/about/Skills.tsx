@@ -1,9 +1,7 @@
-import React from "react";
+type Props = {};
 
-export default function Skills() {
-  return (
-    <div className="p-6 w-2/3 text-xl self-center">
-      <h1 className="text-white text-2xl font-bold">Skills</h1>
-    </div>
-  );
-}
+const Skills = (props: Props) => {
+  return <div>Skills</div>;
+};
+
+export default Skills;

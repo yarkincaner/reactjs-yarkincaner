@@ -1,9 +1,12 @@
-import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { About } from "../screens/about/About";
-import { Portfolio } from "../screens/portfolio/Portfolio";
-import Contact from "../screens/contact/Contact";
 import { AnimatePresence } from "framer-motion";
+import About from "../screens/about/About";
+import Portfolio from "../screens/portfolio/Portfolio";
+import Contact from "../screens/contact/Contact";
+
+// const About = React.lazy(() => import("../screens/about/About"));
+// const Portfolio = React.lazy(() => import("../screens/portfolio/Portfolio"));
+// const Contact = React.lazy(() => import("../screens/contact/Contact"));
 
 type Props = {};
 

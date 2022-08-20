@@ -1,11 +1,13 @@
 import "./About.scss";
-import React, { useState } from "react";
+import { useState } from "react";
 import SocialLinks from "./SocialLinks";
 import Loading from "../../components/loading/Loading";
 // import Skills from "./Skills";
 import { motion } from "framer-motion";
 
-export function About() {
+type Props = {};
+
+const About = (props: Props) => {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
@@ -49,4 +51,6 @@ export function About() {
       </div>
     </motion.div>
   );
-}
+};
+
+export default About;

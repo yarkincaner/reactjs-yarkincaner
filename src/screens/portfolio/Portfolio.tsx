@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Repos from "./Repos";
 import "./Portfolio.scss";
 import Loading from "../../components/loading/Loading";
@@ -7,7 +7,9 @@ import axios from "axios";
 import FilterBar from "./FilterBar";
 import { motion } from "framer-motion";
 
-export function Portfolio() {
+type Props = {};
+
+const Portfolio = (props: Props) => {
   const context = useContext(Context);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -43,4 +45,6 @@ export function Portfolio() {
       )}
     </motion.div>
   );
-}
+};
+
+export default Portfolio;

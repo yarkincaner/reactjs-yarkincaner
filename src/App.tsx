@@ -1,6 +1,5 @@
 import "./App.scss";
-import React from "react";
-import { Navbar } from "./components/navbar/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import { ContextProvider } from "./context/context";
 import AnimatedRoutes from "./components/AnimatedRoutes";
