@@ -14,8 +14,9 @@
 }
 
 .repo {
-	background: linear-gradient(45deg, $backgroundColorLight 0%, $backgroundColor 50%, $backgroundColorLight 100%);
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	background-color: $backgroundColorLight;
+	// background: linear-gradient(45deg, $backgroundColorLight 0%, $backgroundColor 50%, $backgroundColorLight 100%);
+	// box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	animation: repoAnimation 0s ease-out;
 }
 
@@ -61,7 +62,7 @@
 	transition: 0.15s;
 }
 .topic-active:hover {
-	background-color: $myRed;
+	background-color: $danger;
 	color: $foreground2;
 }
 

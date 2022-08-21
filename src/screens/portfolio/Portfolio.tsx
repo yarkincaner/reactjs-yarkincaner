@@ -29,6 +29,8 @@ const Portfolio = (props: Props) => {
 
   return (
     <motion.div
+      id="portfolio"
+      className="h-full"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.4 } }}
@@ -38,7 +40,7 @@ const Portfolio = (props: Props) => {
           <Loading />
         </div>
       ) : (
-        <div className="pb-12 px-2 flex flex-col justify-center items-center">
+        <div className="px-2 flex flex-col justify-center items-center">
           <FilterBar />
           <Repos />
         </div>

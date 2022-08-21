@@ -6,7 +6,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav className="flex items-center justify-between flex-wrap p-4 w-full rounded-b-xl">
+    <nav className="sticky top-0 flex items-center justify-between flex-wrap p-4 w-full rounded-b-xl">
       <TopNavbar />
       <BottomNavbar />
     </nav>

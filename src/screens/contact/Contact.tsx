@@ -43,7 +43,8 @@ const Contact = (props: Props) => {
 
   return (
     <motion.div
-      className="grid grid-cols-6 py-12 md:px-12 place-items-center"
+      id="contact"
+      className="grid grid-cols-6 py-12 md:px-12 place-items-center h-full"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.4 } }}

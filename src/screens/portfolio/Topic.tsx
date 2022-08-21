@@ -30,7 +30,7 @@ const Topic = (props: Props) => {
     <div>
       {filters.includes(props.name) ? (
         <button
-          className="topic-active shadow-md rounded-lg text-center p-2 text-sm flex"
+          className="topic-active h-full shadow-md rounded-lg text-center p-2 text-sm flex"
           onClick={handleClick}
         >
           <div>{props.name}</div>

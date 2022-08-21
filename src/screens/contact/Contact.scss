@@ -9,6 +9,10 @@ label {
 	color: $foreground2;
 }
 
+input[type="text"], textarea {
+	background-color: $foreground2;
+}
+
 .error {
 	color: $danger;
 }
@@ -25,9 +29,9 @@ label {
 .form-submit-button:hover {
 	// background-position: 100% 0;
 	// background-position: right center;
-	background-color: $primaryLight;
+	background-color: $primary;
 	// border-color: $primaryLight;
-	color: $backgroundColor;
+	// color: $backgroundColor;
 }
 
 .form-submit-button-sending {
@@ -37,6 +41,6 @@ label {
 }
 
 .form-submit-button-disabled {
-	background-color: $primary;
+	background-color: $primaryLight;
 	color: $foreground2;
 }

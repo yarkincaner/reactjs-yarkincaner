@@ -7,43 +7,71 @@ const TopNavbar = (props: Props) => {
     <div className="w-full flex-grow md:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0">
       <ul className="flex justify-center text-center flex-1 items-center gap-4">
         <li>
-          <NavLink
-            className={(navData) =>
-              navData.isActive
-                ? "navbar-link-active text-xl inline-block p-2 border-b rounded"
-                : "navbar-link text-xl inline-block p-2 border-b rounded"
-            }
-            to="/"
+          <a
+            className="navbar-link text-xl inline-block p-2 border-b rounded"
+            href="#about"
           >
             About
-          </NavLink>
+          </a>
         </li>
         <li>
-          <NavLink
-            className={(navData) =>
-              navData.isActive
-                ? "navbar-link-active text-xl inline-block p-2 border-b rounded"
-                : "navbar-link text-xl inline-block p-2 border-b rounded"
-            }
-            to="/Portfolio"
+          <a
+            className="navbar-link text-xl inline-block p-2 border-b rounded"
+            href="#portfolio"
           >
             Portfolio
-          </NavLink>
+          </a>
         </li>
         <li>
-          <NavLink
-            className={(navData) =>
-              navData.isActive
-                ? "navbar-link-active text-xl inline-block p-2 border-b rounded"
-                : "navbar-link text-xl inline-block p-2 border-b rounded"
-            }
-            to="/Contact"
+          <a
+            className="navbar-link text-xl inline-block p-2 border-b rounded"
+            href="#contact"
           >
             Contact
-          </NavLink>
+          </a>
         </li>
       </ul>
     </div>
+    // <div className="w-full flex-grow md:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0">
+    //   <ul className="flex justify-center text-center flex-1 items-center gap-4">
+    //     <li>
+    //       <NavLink
+    //         className={(navData) =>
+    //           navData.isActive
+    //             ? "navbar-link-active text-xl inline-block p-2 border-b rounded"
+    //             : "navbar-link text-xl inline-block p-2 border-b rounded"
+    //         }
+    //         to="/"
+    //       >
+    //         About
+    //       </NavLink>
+    //     </li>
+    //     <li>
+    //       <NavLink
+    //         className={(navData) =>
+    //           navData.isActive
+    //             ? "navbar-link-active text-xl inline-block p-2 border-b rounded"
+    //             : "navbar-link text-xl inline-block p-2 border-b rounded"
+    //         }
+    //         to="/Portfolio"
+    //       >
+    //         Portfolio
+    //       </NavLink>
+    //     </li>
+    //     <li>
+    //       <NavLink
+    //         className={(navData) =>
+    //           navData.isActive
+    //             ? "navbar-link-active text-xl inline-block p-2 border-b rounded"
+    //             : "navbar-link text-xl inline-block p-2 border-b rounded"
+    //         }
+    //         to="/Contact"
+    //       >
+    //         Contact
+    //       </NavLink>
+    //     </li>
+    //   </ul>
+    // </div>
   );
 };
 
