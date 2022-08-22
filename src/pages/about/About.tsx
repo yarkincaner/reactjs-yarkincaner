@@ -12,8 +12,7 @@ const About = (props: Props) => {
 
   return (
     <motion.div
-      id="about"
-      className="flex flex-col p-6 h-full"
+      className="flex flex-col p-6"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.4 } }}

@@ -10,7 +10,12 @@ label {
 }
 
 input[type="text"], textarea {
-	background-color: $foreground2;
+	background-color: transparent;
+	color: $foreground2;
+	border: 1px solid $foreground2;
+}
+input[type="text"]:focus, textarea:focus {
+	border-color: $primaryLight;
 }
 
 .error {
@@ -19,28 +24,25 @@ input[type="text"], textarea {
 
 .form-submit-button {
 	transition: 0.2s;
-	background-color: $backgroundColorLight;
+	-webkit-transition: 0.2s;
+	background-color: $primary;
 	// border: 1px solid $foreground2;
 	font-weight: bold;
 	font-size: medium;
-	// background-image: linear-gradient(130deg, $primary 0%, $primaryLight 100%);
-	// background-size: 300% 100%;
 }
 .form-submit-button:hover {
-	// background-position: 100% 0;
-	// background-position: right center;
-	background-color: $primary;
-	// border-color: $primaryLight;
-	// color: $backgroundColor;
+	background-color: $primaryLight;
+	color: $backgroundColorLight;
 }
 
 .form-submit-button-sending {
 	transition: 0.2s;
+	-webkit-transition: 0.2s;
 	background-color: $backgroundColorLight;
 	color: $foreground2;
 }
 
 .form-submit-button-disabled {
-	background-color: $primaryLight;
-	color: $foreground2;
+	background-color: $success;
+	color: $backgroundColor;
 }

@@ -35,6 +35,9 @@ const Contact = (props: Props) => {
       },
       onSubmit: (values) => {
         // console.log(values);
+        // setTimeout(() => {
+        //   setIsMailSent(true);
+        // }, 1000);
         setSendingMail(true);
         sendEmail(values);
       },
@@ -42,13 +45,7 @@ const Contact = (props: Props) => {
     });
 
   return (
-    <motion.div
-      id="contact"
-      className="grid grid-cols-6 py-12 md:px-12 place-items-center h-full"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.4 } }}
-    >
+    <div className="grid grid-cols-6 py-12 md:px-12 place-items-center">
       <div></div>
       <div></div>
       <form
@@ -82,7 +79,7 @@ const Contact = (props: Props) => {
               className="rounded-md w-full"
             />
             {errors.name && touched.name && (
-              <div className="error">{errors.name}</div>
+              <p className="error">{errors.name}</p>
             )}
           </div>
           <div className="grid-cols-1 p-2">
@@ -200,7 +197,7 @@ const Contact = (props: Props) => {
         </div>
       </form>
       <div></div>
-    </motion.div>
+    </div>
   );
 };
 

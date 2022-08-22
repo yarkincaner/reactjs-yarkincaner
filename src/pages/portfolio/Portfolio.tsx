@@ -28,13 +28,7 @@ const Portfolio = (props: Props) => {
   }, []);
 
   return (
-    <motion.div
-      id="portfolio"
-      className="h-full"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.4 } }}
-    >
+    <div className="py-8">
       {isLoading ? (
         <div className="text-center mt-8">
           <Loading />
@@ -45,7 +39,7 @@ const Portfolio = (props: Props) => {
           <Repos />
         </div>
       )}
-    </motion.div>
+    </div>
   );
 };
 

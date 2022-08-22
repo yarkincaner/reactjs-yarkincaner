@@ -1,5 +1,9 @@
 @import "../../Theme.scss";
 
+#portfolio {
+	background-color: $backgroundColor;
+}
+
 #filterBar {
 	background-color: $foreground2;
 }
@@ -18,11 +22,13 @@
 	// background: linear-gradient(45deg, $backgroundColorLight 0%, $backgroundColor 50%, $backgroundColorLight 100%);
 	// box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	animation: repoAnimation 0s ease-out;
+	-webkit-animation: repoAnimation 0s ease-out;
 }
 
 .icon {
 	color: $foreground2;
 	animation: 0.5s ease-out iconAnimation;
+	-webkit-animation: 0.5s ease-out iconAnimation;
 }
 
 .repo-name {
@@ -49,7 +55,8 @@
 .topic {
 	background-color: $backgroundColorLight;
 	color: $foreground2;
-	transition: 0.15s;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
 }
 .topic:hover {
 	background-color: $backgroundColor;
@@ -59,7 +66,8 @@
 .topic-active {
 	background-color: $primary;
 	color: $foreground2;
-	transition: 0.15s;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
 }
 .topic-active:hover {
 	background-color: $danger;
@@ -70,23 +78,28 @@
 	$a: $i / 2;
 	.repo:nth-child(#{$i}n) {
 			animation-duration: #{$a * 0.5}s;
+			-webkit-animation-duration: #{$a * 0.5}s;
 	}
 }
 
 @keyframes repoAnimation {
 	0% {
 		transform: scale(0%);
+		-webkit-animation: scale(0%);
 	}
 	100% {
 		transform: scale(100%);
+		-webkit-transform: scale(100%);
 	}
 }
 
 @keyframes iconAnimation {
 	0% {
     transform: translateX(-200%);
+		-webkit-transform: translateX(-200%);
   }
   100% {
     transform: translateX(0);
+		-webkit-transform: translateX(0%);
   }
 }

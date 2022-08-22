@@ -1,15 +1,34 @@
 import "./Navbar.scss";
 import BottomNavbar from "./BottomNavbar";
 import TopNavbar from "./TopNavbar";
+import { useEffect, useState } from "react";
 
 type Props = {};
 
+function getWindowSize() {
+  const { innerWidth, innerHeight } = window;
+  return { innerWidth, innerHeight };
+}
+
 const Navbar = (props: Props) => {
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
   return (
-    <nav className="sticky top-0 flex items-center justify-between flex-wrap p-4 w-full rounded-b-xl">
-      <TopNavbar />
-      <BottomNavbar />
-    </nav>
+    <div className="md:py-8">
+      {windowSize.innerWidth >= 768 ? <TopNavbar /> : <BottomNavbar />}
+    </div>
   );
 };
 

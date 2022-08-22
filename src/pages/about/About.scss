@@ -7,6 +7,7 @@
 
 .header {
   animation: 1s ease-out 0s 1 imageAnimation;
+  -webkit-animation: 1s ease-out 0s 1 imageAnimation;
 }
 
 h1, p {
@@ -16,6 +17,7 @@ h1, p {
 #aboutLine {
   background-color: $foreground2;
   animation: 1.5s ease-out lineWidthAnimation;
+  -webkit-animation: 1.5s ease-out lineWidthAnimation;
 }
 
 .fa:hover {
@@ -29,7 +31,9 @@ h1, p {
 
 .linkedin-about {
   transition: 0.2s;
+  -webkit-transition: 0.2s;
   animation: 2s ease-out socialLinksAnimations;
+  -webkit-animation: 2s ease-out socialLinksAnimations;
   border-color: $foreground2;
   color: $foreground2;
 }
@@ -39,7 +43,9 @@ h1, p {
 
 .github-about {
   transition: 0.2s;
+  -webkit-transition: 0.2s;
   animation: 1.5s ease-out socialLinksAnimations;
+  -webkit-animation: 1.5s ease-out socialLinksAnimations;
   border-color: $foreground2;
   color: $foreground2;
 }
@@ -49,7 +55,9 @@ h1, p {
 
 .hackerrank-about {
   transition: 0.2s;
+  -webkit-transition: 0.2s;
   animation: 1s ease-out socialLinksAnimations;
+  -webkit-animation: 1s ease-out socialLinksAnimations;
   border-color: $foreground2;
   color: $foreground2;
 }
@@ -74,27 +82,33 @@ h1, p {
 @keyframes socialLinksAnimations {
   0% {
     transform: translateX(-500%);
+    -webkit-transform: translateX(-500%);
   }
   100% {
     transform: translateX(0);
+    -webkit-transform: translateX(0);
   }
 }
 
 @keyframes lineWidthAnimation {
   0% {
     transform: scaleX(0);
+    -webkit-transform: scaleX(0);
   }
   100% {
     transform: scaleX(100%);
+    -webkit-transform: scaleX(100%);
   }
 }
 
 @keyframes imageAnimation {
   0% {
     transform: scale(0);
+    -webkit-transform: scale(0);
   }
   100% {
     transform: scale(100%);
+    -webkit-transform: scale(100%);
   }
 }
 

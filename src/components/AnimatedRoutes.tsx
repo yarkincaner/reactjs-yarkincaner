@@ -1,8 +1,8 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import About from "../screens/about/About";
-import Portfolio from "../screens/portfolio/Portfolio";
-import Contact from "../screens/contact/Contact";
+import About from "../pages/about/About";
+import Portfolio from "../pages/portfolio/Portfolio";
+import Contact from "../pages/contact/Contact";
 
 // const About = React.lazy(() => import("../screens/about/About"));
 // const Portfolio = React.lazy(() => import("../screens/portfolio/Portfolio"));

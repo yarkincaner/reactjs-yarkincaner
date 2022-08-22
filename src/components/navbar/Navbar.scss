@@ -2,13 +2,24 @@
 
 nav {
   // background-image: url("navbarBackground.svg");
+  // background-color: fade-out($color: $backgroundColor, $amount: 0.2);
+}
+
+.top-navbar {
+  background-color: transparent;
+  transition: 0.5s;
+}
+.top-navbar-scrolled {
+  background-color: fade-out($color: $backgroundColor, $amount: 0);
+  transition: 0.5s;
 }
 
 .navbar-link {
   color: $foreground2;
   border-color: $foreground2;
   background-color: transparent;
-  transition: 0.15s;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
 }
 
 .navbar-link:hover {

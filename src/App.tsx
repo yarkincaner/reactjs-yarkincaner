@@ -3,9 +3,9 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import { ContextProvider } from "./context/context";
 import AnimatedRoutes from "./components/AnimatedRoutes";
-import About from "./screens/about/About";
-import Portfolio from "./screens/portfolio/Portfolio";
-import Contact from "./screens/contact/Contact";
+import About from "./pages/about/About";
+import Portfolio from "./pages/portfolio/Portfolio";
+import Contact from "./pages/contact/Contact";
 
 // TODO: Show status of internet connection to user via NetInfo or something else.
 // TODO: Finish Contact page.
@@ -15,9 +15,15 @@ export default function App() {
     <ContextProvider>
       <Navbar />
       {/* <AnimatedRoutes /> */}
-      <About />
-      <Portfolio />
-      <Contact />
+      <section id="about">
+        <About />
+      </section>
+      <section id="portfolio">
+        <Portfolio />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
       <Footer />
     </ContextProvider>
   );
