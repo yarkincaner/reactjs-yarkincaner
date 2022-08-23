@@ -1,15 +1,12 @@
 @import "../../Theme.scss";
 
 .footer {
-	// background-color: $secondary;
-	background-image: url("footerBackground.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+	background-color: $backgroundColor;
 	animation: 1.5s ease-out 0s 1 footerAnimation;
+	-webkit-animation: 1.5s ease-out 0s 1 footerAnimation;
 
 	h1 {
-		color: $foreground2;
+		color: $foreground;
 	}
 }
 
@@ -22,8 +19,10 @@
 @keyframes footerAnimation {
 	0% {
 		transform: translateY(100%);
+		-webkit-transform: translateY(100%);
 	}
 	100% {
 		transform: translateY(0);
+		-webkit-transform: translateY(0);
 	}
 }

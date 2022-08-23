@@ -1,8 +1,10 @@
-import React, { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Context } from "../../context/context";
 import Repo from "./Repo";
 
-export default function Repos() {
+type Props = {};
+
+const Repos = (props: Props) => {
   const context = useContext(Context);
   const [activeRepos, setActiveRepos] = useState<any>([]);
 
@@ -31,4 +33,6 @@ export default function Repos() {
       <div></div>
     </div>
   );
-}
+};
+
+export default Repos;

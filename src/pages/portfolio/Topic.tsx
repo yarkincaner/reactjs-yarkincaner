@@ -1,6 +1,6 @@
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Context from "../../context/context";
 
 type Props = {
@@ -13,15 +13,12 @@ const Topic = (props: Props) => {
   const handleClick = () => {
     var array = [...filters];
     if (filters.includes(props.name)) {
-      // var index = filters.indexOf(props.name);
       var index = array.indexOf(props.name);
       if (index !== -1) {
-        // setFilters(filters.splice(index, 1));
         array.splice(index, 1);
         setFilters(array);
       }
     } else {
-      // setFilters([...filters, props.name]);
       array.push(props.name);
       array.sort();
       setFilters(array);
@@ -33,7 +30,7 @@ const Topic = (props: Props) => {
     <div>
       {filters.includes(props.name) ? (
         <button
-          className="topic-active shadow-md rounded-lg text-center p-2 text-sm flex"
+          className="topic-active h-full shadow-md rounded-lg text-center p-2 text-sm flex"
           onClick={handleClick}
         >
           <div>{props.name}</div>

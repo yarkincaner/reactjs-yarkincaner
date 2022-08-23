@@ -1,14 +1,16 @@
-import React, { useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 import Context from "../../context/context";
 import Topic from "./Topic";
 
-export default function FilterBar() {
+type Props = {};
+
+const FilterBar = (props: Props) => {
   const { filters } = useContext(Context);
 
   return (
     <div
       id="filterBar"
-      className="flex flex-wrap rounded-lg p-2 gap-2 w-full lg:w-3/5"
+      className="flex flex-wrap rounded-lg p-2 gap-2 w-full lg:w-2/3"
     >
       <h1 id="filterBarTitle" className="px-4 py-2 font-bold">
         Filters:
@@ -24,4 +26,6 @@ export default function FilterBar() {
       )}
     </div>
   );
-}
+};
+
+export default FilterBar;

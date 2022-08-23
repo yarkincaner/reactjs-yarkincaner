@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedinIn,
@@ -6,7 +5,9 @@ import {
   faHackerrank,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function SocialLinks() {
+type Props = {};
+
+const SocialLinks = (props: Props) => {
   return (
     <div className="self-center pb-4 flex gap-4">
       <a
@@ -42,4 +43,6 @@ export default function SocialLinks() {
       </a>
     </div>
   );
-}
+};
+
+export default SocialLinks;

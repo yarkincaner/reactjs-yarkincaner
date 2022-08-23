@@ -1,13 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Repos from "./Repos";
 import "./Portfolio.scss";
 import Loading from "../../components/loading/Loading";
 import Context from "../../context/context";
 import axios from "axios";
 import FilterBar from "./FilterBar";
-import { motion } from "framer-motion";
 
-export function Portfolio() {
+type Props = {};
+
+const Portfolio = (props: Props) => {
   const context = useContext(Context);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -26,21 +27,19 @@ export function Portfolio() {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.4 } }}
-    >
+    <div>
       {isLoading ? (
-        <div className="text-center mt-8">
+        <div className="text-center grid content-center">
           <Loading />
         </div>
       ) : (
-        <div className="pb-12 px-2 flex flex-col justify-center items-center">
+        <div className="px-2 flex flex-col justify-center items-center">
           <FilterBar />
           <Repos />
         </div>
       )}
-    </motion.div>
+    </div>
   );
-}
+};
+
+export default Portfolio;

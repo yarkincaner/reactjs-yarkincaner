@@ -7,7 +7,10 @@ const validations = yup.object().shape({
     .email("Please write a valid email address")
     .required("You must give your email"),
   topic: yup.string().required("I need to know what you wanted to talk about"),
-  message: yup.string().required("Please write your message"),
+  message: yup
+    .string()
+    .min(10, "must be at least 10 characters long")
+    .required("Please write your message"),
 });
 
 export default validations;

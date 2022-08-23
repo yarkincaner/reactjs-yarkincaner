@@ -2,38 +2,53 @@
 
 nav {
   // background-image: url("navbarBackground.svg");
+  // background-color: fade-out($color: $backgroundColor, $amount: 0.2);
+}
+
+.top-navbar {
+  background-color: transparent;
+  transition: 0.5s;
+}
+.top-navbar-scrolled {
+  background-color: fade-out($color: $backgroundColor, $amount: 0);
+  transition: 0.5s;
+}
+
+.menuIcons {
+  color: $foreground;
 }
 
 .navbar-link {
-  color: $foreground2;
-  border-color: $foreground2;
+  color: $foreground;
+  border-color: $foreground;
   background-color: transparent;
-  transition: 0.15s;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
 }
 
 .navbar-link:hover {
   color: $backgroundColorLight;
-  background-color: $foreground2;
+  background-color: $foreground;
 }
 
 .navbar-link-active {
-  color: $foreground2;
-  border-color: $foreground2;
+  color: $foreground;
+  border-color: $foreground;
   background-color: $backgroundColor;
 }
 
 .nav-bottom {
-  background-color: $backgroundColor;
-  box-shadow: 0 0 3px 1px $backgroundColorLight;
+  background-color: $backgroundColorLight;
+  box-shadow: 0 0 3px 1px $backgroundColor;
   // border-color: $backgroundColorLight;
 }
 
 .nav-bottom-link {
-  color: $foreground2;
+  color: $foreground;
 }
 
 .nav-bottom-link-active {
-  background-color: $foreground2;
+  background-color: $foreground;
   color: $backgroundColor;
 
   p {
