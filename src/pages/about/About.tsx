@@ -3,7 +3,6 @@ import { useState } from "react";
 import SocialLinks from "./SocialLinks";
 import Loading from "../../components/loading/Loading";
 // import Skills from "./Skills";
-import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -11,12 +10,7 @@ const About = (props: Props) => {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <motion.div
-      className="flex flex-col p-6"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.4 } }}
-    >
+    <div className="flex flex-col px-6">
       <div className="w-full text-center justify-center p-6">
         {isLoading ? <Loading /> : null}
         <div className="header">
@@ -49,7 +43,7 @@ const About = (props: Props) => {
           in web development. My true purpose is to be a full-stack developer.
         </p>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

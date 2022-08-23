@@ -26,9 +26,7 @@ const Navbar = (props: Props) => {
   }, []);
 
   return (
-    <div className="md:py-8">
-      {windowSize.innerWidth >= 768 ? <TopNavbar /> : <BottomNavbar />}
-    </div>
+    <div>{windowSize.innerWidth >= 768 ? <TopNavbar /> : <BottomNavbar />}</div>
   );
 };
 

@@ -6,13 +6,13 @@
 // }
 
 label {
-	color: $foreground2;
+	color: $foreground;
 }
 
 input[type="text"], textarea {
 	background-color: transparent;
-	color: $foreground2;
-	border: 1px solid $foreground2;
+	color: $foreground;
+	border: 1px solid $foreground;
 }
 input[type="text"]:focus, textarea:focus {
 	border-color: $primaryLight;
@@ -26,7 +26,7 @@ input[type="text"]:focus, textarea:focus {
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
 	background-color: $primary;
-	// border: 1px solid $foreground2;
+	// border: 1px solid $foreground;
 	font-weight: bold;
 	font-size: medium;
 }
@@ -39,7 +39,7 @@ input[type="text"]:focus, textarea:focus {
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
 	background-color: $backgroundColorLight;
-	color: $foreground2;
+	color: $foreground;
 }
 
 .form-submit-button-disabled {

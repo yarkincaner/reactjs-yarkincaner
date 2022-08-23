@@ -1,7 +1,7 @@
 @import "../../Theme.scss";
 
 #profilePic {
-  border-color: $foreground2;
+  border-color: $foreground;
   // animation: profilePicFlickerAnimation 2s infinite;
 }
 
@@ -11,17 +11,17 @@
 }
 
 h1, p {
-  color: $foreground2;
+  color: $foreground;
 }
 
 #aboutLine {
-  background-color: $foreground2;
+  background-color: $foreground;
   animation: 1.5s ease-out lineWidthAnimation;
   -webkit-animation: 1.5s ease-out lineWidthAnimation;
 }
 
 .fa:hover {
-  background-color: $foreground2;
+  background-color: $foreground;
 }
 
 // .fa {
@@ -34,8 +34,8 @@ h1, p {
   -webkit-transition: 0.2s;
   animation: 2s ease-out socialLinksAnimations;
   -webkit-animation: 2s ease-out socialLinksAnimations;
-  border-color: $foreground2;
-  color: $foreground2;
+  border-color: $foreground;
+  color: $foreground;
 }
 .linkedin-about:hover {
   color: #0a66c2;
@@ -46,8 +46,8 @@ h1, p {
   -webkit-transition: 0.2s;
   animation: 1.5s ease-out socialLinksAnimations;
   -webkit-animation: 1.5s ease-out socialLinksAnimations;
-  border-color: $foreground2;
-  color: $foreground2;
+  border-color: $foreground;
+  color: $foreground;
 }
 .github-about:hover {
   color: black;
@@ -58,24 +58,24 @@ h1, p {
   -webkit-transition: 0.2s;
   animation: 1s ease-out socialLinksAnimations;
   -webkit-animation: 1s ease-out socialLinksAnimations;
-  border-color: $foreground2;
-  color: $foreground2;
+  border-color: $foreground;
+  color: $foreground;
 }
 .hackerrank-about:hover {
   color: #28b95a;
 }
 @keyframes profilePicFlickerAnimation {
   0% {
-    box-shadow: 0px 0px 5px 0px $foreground2;
+    box-shadow: 0px 0px 5px 0px $foreground;
   }
   50% {
-    box-shadow: 0px 0px 1px 0px $foreground2;
+    box-shadow: 0px 0px 1px 0px $foreground;
   }
   55% {
-    box-shadow: 0px 0px 5px 0px $foreground2;
+    box-shadow: 0px 0px 5px 0px $foreground;
   }
   100% {
-    box-shadow: 0px 0px 5px 0px $foreground2;
+    box-shadow: 0px 0px 5px 0px $foreground;
   }
 }
 

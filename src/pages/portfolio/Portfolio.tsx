@@ -5,7 +5,6 @@ import Loading from "../../components/loading/Loading";
 import Context from "../../context/context";
 import axios from "axios";
 import FilterBar from "./FilterBar";
-import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -28,9 +27,9 @@ const Portfolio = (props: Props) => {
   }, []);
 
   return (
-    <div className="py-8">
+    <div>
       {isLoading ? (
-        <div className="text-center mt-8">
+        <div className="text-center grid content-center">
           <Loading />
         </div>
       ) : (
