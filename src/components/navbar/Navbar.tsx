@@ -1,32 +1,23 @@
 import "./Navbar.scss";
 import BottomNavbar from "./BottomNavbar";
 import TopNavbar from "./TopNavbar";
-import { useEffect, useState } from "react";
+import Menu from "./Menu";
 
 type Props = {};
 
-function getWindowSize() {
-  const { innerWidth, innerHeight } = window;
-  return { innerWidth, innerHeight };
-}
-
 const Navbar = (props: Props) => {
-  const [windowSize, setWindowSize] = useState(getWindowSize());
-
-  useEffect(() => {
-    function handleWindowResize() {
-      setWindowSize(getWindowSize());
-    }
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-
   return (
-    <div>{windowSize.innerWidth >= 768 ? <TopNavbar /> : <BottomNavbar />}</div>
+    <>
+      <div className="sm:flex hidden">
+        <TopNavbar />
+      </div>
+      {/* <div className="sm:hidden visible">
+        <Menu />
+      </div> */}
+      <div className="sm:hidden visible">
+        <BottomNavbar />
+      </div>
+    </>
   );
 };
 

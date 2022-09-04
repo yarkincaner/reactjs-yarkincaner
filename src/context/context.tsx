@@ -24,9 +24,7 @@ interface IContextProvider {
 
 export const ContextProvider = ({ children }: IContextProvider) => {
   const [filters, setFilters] = useState<Array<string>>([]);
-
   const [repos, setRepos] = useState<React.ReactElement[]>([]);
-
   const [isMailSent, setIsMailSent] = useState<boolean>(false);
 
   const values = {

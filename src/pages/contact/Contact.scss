@@ -1,4 +1,4 @@
-@import "../../Theme.scss";
+@import "../../utils/Theme.scss";
 
 // .form-container {
 // 	background: linear-gradient(45deg, $backgroundColorLight 0%, $backgroundColor 50%, $backgroundColorLight 100%);
@@ -10,9 +10,9 @@ label {
 }
 
 input[type="text"], textarea {
-	background-color: transparent;
+	background-color: $backgroundColorLight;
 	color: $foreground;
-	border: 1px solid $foreground;
+	border: 1px solid $backgroundColorLight;
 }
 input[type="text"]:focus, textarea:focus {
 	border-color: $primaryLight;
@@ -20,6 +20,9 @@ input[type="text"]:focus, textarea:focus {
 
 .error {
 	color: $danger;
+	transition: 1s;
+	animation: 0.5s ease-out errorAnimation;
+	-webkit-animation: 0.5s ease-out errorAnimation;
 }
 
 .form-submit-button {
@@ -45,4 +48,17 @@ input[type="text"]:focus, textarea:focus {
 .form-submit-button-disabled {
 	background-color: $success;
 	color: $backgroundColor;
+}
+
+@keyframes errorAnimation {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+		-webkit-animation: translateX(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+	}
 }

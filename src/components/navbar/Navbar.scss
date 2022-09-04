@@ -1,9 +1,9 @@
-@import "../../Theme.scss";
+@import "../../utils/Theme.scss";
 
-nav {
+// nav {
   // background-image: url("navbarBackground.svg");
   // background-color: fade-out($color: $backgroundColor, $amount: 0.2);
-}
+// }
 
 .top-navbar {
   background-color: transparent;
@@ -12,10 +12,6 @@ nav {
 .top-navbar-scrolled {
   background-color: fade-out($color: $backgroundColor, $amount: 0);
   transition: 0.5s;
-}
-
-.menuIcons {
-  color: $foreground;
 }
 
 .navbar-link {
@@ -35,6 +31,15 @@ nav {
   color: $foreground;
   border-color: $foreground;
   background-color: $backgroundColor;
+}
+
+.menu {
+  background-color: $backgroundColorLight;
+  box-shadow: 0 0 3px 1px $backgroundColor;
+}
+
+.menuIcons {
+  color: $foreground;
 }
 
 .nav-bottom {
