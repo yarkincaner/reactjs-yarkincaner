@@ -1,4 +1,4 @@
-# Personal webiste
+# Personal website
 
 Source code of the https://yarkincaner.me which is my personal website.
 
