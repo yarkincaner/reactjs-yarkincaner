@@ -20,15 +20,15 @@
 .repo {
 	background-color: $backgroundColorLight;
 	// background: linear-gradient(45deg, $backgroundColorLight 0%, $backgroundColor 50%, $backgroundColorLight 100%);
-	// box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	animation: repoAnimation 0s ease-out;
 	-webkit-animation: repoAnimation 0s ease-out;
 }
 
 .icon {
 	color: $foreground;
-	animation: 0.5s ease-out iconAnimation;
-	-webkit-animation: 0.5s ease-out iconAnimation;
+	animation: 0.2s ease-out iconAnimation;
+	-webkit-animation: 0.2s ease-out iconAnimation;
 }
 
 .repo-name {
