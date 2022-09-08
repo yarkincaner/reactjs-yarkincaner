@@ -1,6 +1,7 @@
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
+import useScrollDirection from "../../hooks/useScrollDirection";
 
 type Props = {};
 
@@ -12,21 +13,7 @@ const variants = {
 const Menu = (props: Props) => {
   const [navbarMenu, setNavbarMenu] = useState(false);
   const [navbar, setNavbar] = useState(false);
-
-  const changeBackground = () => {
-    // console.log(window.scrollY);
-    if (window.scrollY >= 66) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-
-  useEffect(() => {
-    changeBackground();
-    // adding the event when scroll change background
-    window.addEventListener("scroll", changeBackground);
-  });
+  const scrollDirection = useScrollDirection();
 
   const handleMenu = () => {
     setNavbarMenu((prev) => !prev);
@@ -34,7 +21,9 @@ const Menu = (props: Props) => {
 
   return (
     <nav
-      className={`top-navbar-scrolled fixed top-0 flex flex-col items-center p-4 w-full rounded-b-xl z-50`}
+      className={`menu ${
+        scrollDirection === "down" ? "-top-24" : "top-0"
+      }  fixed flex flex-col items-center p-4 w-full rounded-b-xl z-50 transition-all duration-700`}
     >
       <div className="flex menuIcons w-full justify-end">
         {navbarMenu ? (

@@ -1,4 +1,4 @@
-@import "Theme.scss";
+@import "utils/Theme.scss";
 
 html,
 body {
@@ -18,4 +18,18 @@ body {
   html {
     scroll-behavior: smooth;
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primaryLight;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: $backgroundColor;
 }

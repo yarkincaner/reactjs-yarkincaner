@@ -14,7 +14,7 @@ interface Props {
 
 const Repo = (props: Props) => {
   return (
-    <div className="repo flex flex-col w-full h-full md:hover:scale-110 transition rounded-2xl overflow-hidden">
+    <div className="repo flex flex-col w-full h-full md:hover:scale-110 transition duration-200 rounded-2xl overflow-hidden">
       <a className="group flex-grow" target="_blank" href={props.repo.html_url}>
         <div className="absolute hidden group-hover:flex p-2">
           <FontAwesomeIcon
